@@ -20,27 +20,27 @@ public class typeof_Assignment_InferenceRule extends AbstractInferenceRule_Runti
   public void applyRule(final SNode assignment, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (!(typeCheckingContext.isSingleTypeComputation())) {
       {
-        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(assignment, LINKS.assignment$EwX8);
+        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(assignment, LINKS.right$lIwb);
         EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, "Assignment to an incompatible type", "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285036437", 0, null);
-        typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285036440", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.assignee$YL1w), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285036445", true), true, true, _info_12389875345);
+        typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285036440", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.left$lI29), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285036445", true), true, true, _info_12389875345);
       }
     }
 
     {
-      final SNode assigneeType = typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.assignee$YL1w), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859057577635", true);
+      final SNode assigneeType = typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.left$lI29), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859057577635", true);
       typeCheckingContext.whenConcrete(assigneeType, () -> {
         if ((typeCheckingContext.getExpandedNode(assigneeType) == null)) {
           {
-            SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(assignment, LINKS.assignee$YL1w);
+            SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(assignment, LINKS.left$lI29);
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, "Incompatible assignment type (unknown assignee type)", "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859059378893", 0, null);
-            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859059378901", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.assignment$EwX8), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859059378896", true), false, true, _info_12389875345);
+            typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859059378901", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(assignment, LINKS.right$lIwb), "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859059378896", true), false, true, _info_12389875345);
           }
         }
       }, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859057577589", false, false);
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.Assignment$Cl;
+    return CONCEPTS.AssignmentOp$Cl;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -50,11 +50,11 @@ public class typeof_Assignment_InferenceRule extends AbstractInferenceRule_Runti
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink assignment$EwX8 = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, 0x26f658b425f39ddL, "assignment");
-    /*package*/ static final SContainmentLink assignee$YL1w = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, 0x26f658b4262005dL, "assignee");
+    /*package*/ static final SContainmentLink right$lIwb = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbcL, 0x28a3a9c7f8e49fc7L, "right");
+    /*package*/ static final SContainmentLink left$lI29 = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbcL, 0x28a3a9c7f8e49fc5L, "left");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Assignment$Cl = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.Assignment");
+    /*package*/ static final SConcept AssignmentOp$Cl = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.AssignmentOp");
   }
 }

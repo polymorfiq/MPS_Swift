@@ -199,30 +199,30 @@
   </registry>
   <node concept="1YbPZF" id="9JpoH2tnUF">
     <property role="TrG5h" value="typeof_Assignment" />
-    <property role="3GE5qa" value="Statements" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
     <node concept="3clFbS" id="9JpoH2tnUG" role="18ibNy">
       <node concept="1ZobV4" id="9JpoH2Ikml" role="3cqZAp">
         <property role="3wDh2S" value="true" />
         <node concept="mw_s8" id="9JpoH2Ikmn" role="1ZfhK$">
           <node concept="1Z2H0r" id="9JpoH2Ikmo" role="mwGJk">
-            <node concept="2OqwBi" id="9JpoH2Ikmp" role="1Z2MuG">
+            <node concept="2OqwBi" id="2yzEsvSUNNu" role="1Z2MuG">
               <node concept="1YBJjd" id="9JpoH2Ikmq" role="2Oq$k0">
                 <ref role="1YBMHb" node="9JpoH2tnUI" resolve="assignment" />
               </node>
-              <node concept="3TrEf2" id="9JpoH2Ikmr" role="2OqNvi">
-                <ref role="3Tt5mk" to="ztcj:9JpoH2nNBt" resolve="assignment" />
+              <node concept="3TrEf2" id="2yzEsvSUO5N" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z7" resolve="right" />
               </node>
             </node>
           </node>
         </node>
         <node concept="mw_s8" id="9JpoH2Ikms" role="1ZfhKB">
           <node concept="1Z2H0r" id="9JpoH2Ikmt" role="mwGJk">
-            <node concept="2OqwBi" id="9JpoH2Ikmu" role="1Z2MuG">
+            <node concept="2OqwBi" id="2yzEsvSUOpO" role="1Z2MuG">
               <node concept="1YBJjd" id="9JpoH2Ikmv" role="2Oq$k0">
                 <ref role="1YBMHb" node="9JpoH2tnUI" resolve="assignment" />
               </node>
-              <node concept="3TrEf2" id="9JpoH2Ikmw" role="2OqNvi">
-                <ref role="3Tt5mk" to="ztcj:9JpoH2ow1t" resolve="assignee" />
+              <node concept="3TrEf2" id="2yzEsvSUOuZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
               </node>
             </node>
           </node>
@@ -245,24 +245,24 @@
               <node concept="1ZobV4" id="2yzEsvSPJFd" role="3cqZAp">
                 <node concept="mw_s8" id="2yzEsvSPJFk" role="1ZfhK$">
                   <node concept="1Z2H0r" id="2yzEsvSPJFl" role="mwGJk">
-                    <node concept="2OqwBi" id="2yzEsvSPJFm" role="1Z2MuG">
+                    <node concept="2OqwBi" id="2yzEsvSUQ5W" role="1Z2MuG">
                       <node concept="1YBJjd" id="2yzEsvSPJFn" role="2Oq$k0">
                         <ref role="1YBMHb" node="9JpoH2tnUI" resolve="assignment" />
                       </node>
-                      <node concept="3TrEf2" id="2yzEsvSPJFo" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ztcj:9JpoH2ow1t" resolve="assignee" />
+                      <node concept="3TrEf2" id="2yzEsvSUQaj" role="2OqNvi">
+                        <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="mw_s8" id="2yzEsvSPJFf" role="1ZfhKB">
                   <node concept="1Z2H0r" id="2yzEsvSPJFg" role="mwGJk">
-                    <node concept="2OqwBi" id="2yzEsvSPJFh" role="1Z2MuG">
+                    <node concept="2OqwBi" id="2yzEsvSUQe1" role="1Z2MuG">
                       <node concept="1YBJjd" id="2yzEsvSPJFi" role="2Oq$k0">
                         <ref role="1YBMHb" node="9JpoH2tnUI" resolve="assignment" />
                       </node>
-                      <node concept="3TrEf2" id="2yzEsvSPJFj" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ztcj:9JpoH2nNBt" resolve="assignment" />
+                      <node concept="3TrEf2" id="2yzEsvSUQiU" role="2OqNvi">
+                        <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z7" resolve="right" />
                       </node>
                     </node>
                   </node>
@@ -275,12 +275,12 @@
           </node>
         </node>
         <node concept="1Z2H0r" id="2yzEsvSIRUz" role="nvjzm">
-          <node concept="2OqwBi" id="2yzEsvSIS3T" role="1Z2MuG">
+          <node concept="2OqwBi" id="2yzEsvSUPgs" role="1Z2MuG">
             <node concept="1YBJjd" id="2yzEsvSIRUZ" role="2Oq$k0">
               <ref role="1YBMHb" node="9JpoH2tnUI" resolve="assignment" />
             </node>
-            <node concept="3TrEf2" id="2yzEsvSISvi" role="2OqNvi">
-              <ref role="3Tt5mk" to="ztcj:9JpoH2ow1t" resolve="assignee" />
+            <node concept="3TrEf2" id="2yzEsvSUPzp" role="2OqNvi">
+              <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
             </node>
           </node>
         </node>
@@ -292,7 +292,7 @@
     </node>
     <node concept="1YaCAy" id="9JpoH2tnUI" role="1YuTPh">
       <property role="TrG5h" value="assignment" />
-      <ref role="1YaFvo" to="ztcj:9JpoH2nNBa" resolve="Assignment" />
+      <ref role="1YaFvo" to="ztcj:9JpoH2nNBa" resolve="AssignmentOp" />
     </node>
   </node>
   <node concept="1YbPZF" id="9JpoH2umsj">
@@ -1420,6 +1420,264 @@
     <node concept="1YaCAy" id="2yzEsvSJnEh" role="1YuTPh">
       <property role="TrG5h" value="namedEntityDecl" />
       <ref role="1YaFvo" to="ztcj:2yzEsvSJnE7" resolve="NamedEntityDecl" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2yzEsvSX1Oi">
+    <property role="TrG5h" value="typeof_ComparisonOperator" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <node concept="3clFbS" id="2yzEsvSX1Oj" role="18ibNy">
+      <node concept="1Z5TYs" id="2yzEsvSX2ag" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSX2a$" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSX2aw" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSX3oc" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSX3oe" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2K97p" resolve="Bool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSX2aj" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSX1P9" role="mwGJk">
+            <node concept="1YBJjd" id="2yzEsvSX1R3" role="1Z2MuG">
+              <ref role="1YBMHb" node="2yzEsvSX1Ol" resolve="comparisonOperator" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2yzEsvSX1Ol" role="1YuTPh">
+      <property role="TrG5h" value="comparisonOperator" />
+      <ref role="1YaFvo" to="ztcj:2yzEsvSX1NR" resolve="ComparisonOperator" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2yzEsvSXTui">
+    <property role="TrG5h" value="typeof_TernaryConditionalOp" />
+    <property role="3GE5qa" value="Statements.Operators.Ternary" />
+    <node concept="3clFbS" id="2yzEsvSXTuj" role="18ibNy">
+      <node concept="1ZobV4" id="2yzEsvSXUv8" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="2yzEsvSXUvw" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSXUvs" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSXUCd" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSXUCf" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2K97p" resolve="Bool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSXUvb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSXTvb" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSXTEX" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSXTx5" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSXTul" resolve="ternaryConditionalOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSXU9J" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvSX3oQ" resolve="first" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSXUCO" role="3o8Qv2">
+          <property role="Xl_RC" value="First operand must be a boolean" />
+        </node>
+      </node>
+      <node concept="1ZobV4" id="2yzEsvSYngH" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYngJ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYngK" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYngL" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYngM" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSXTul" resolve="ternaryConditionalOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYngN" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvSX3oV" resolve="third" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYngO" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2yzEsvSYngP" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYngQ" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYngR" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSXTul" resolve="ternaryConditionalOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYngS" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvSX3oS" resolve="second" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYngT" role="3o8Qv2">
+          <property role="Xl_RC" value="Both (potential) outputs of a ternary condition must be of the same type" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2yzEsvSXTul" role="1YuTPh">
+      <property role="TrG5h" value="ternaryConditionalOp" />
+      <ref role="1YaFvo" to="ztcj:2yzEsvSX3oO" resolve="TernaryConditionalOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2yzEsvSYvxL">
+    <property role="TrG5h" value="typeof_NilCoalescingOp" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <node concept="3clFbS" id="2yzEsvSYvxM" role="18ibNy">
+      <node concept="1ZobV4" id="2yzEsvSYwoz" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYwoV" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2yzEsvSYwoR" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYwpx" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYwpc" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYvxO" resolve="nilCoalescingOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYwsU" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYwoA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYvyG" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYvJg" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYv$A" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYvxO" resolve="nilCoalescingOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYw1N" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z7" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYwt$" role="3o8Qv2">
+          <property role="Xl_RC" value="Nil-coalesced values must be of the same type" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2yzEsvSYvxO" role="1YuTPh">
+      <property role="TrG5h" value="nilCoalescingOp" />
+      <ref role="1YaFvo" to="ztcj:2yzEsvSYvxF" resolve="NilCoalescingOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2yzEsvSYwvl">
+    <property role="TrG5h" value="typeof_RangeOp" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <node concept="3clFbS" id="2yzEsvSYwvm" role="18ibNy">
+      <node concept="1ZobV4" id="2yzEsvSYxvA" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYxvY" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSYxvU" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSYxDo" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSYxDq" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2mfxo" resolve="Int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYxvD" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYwwi" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYwG4" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYwyc" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYwvo" resolve="rangeOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYxad" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYxJw" role="3o8Qv2">
+          <property role="Xl_RC" value="Must be an integer" />
+        </node>
+      </node>
+      <node concept="1ZobV4" id="2yzEsvSYxEb" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYxEc" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSYxEd" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSYxEe" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSYxEf" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2mfxo" resolve="Int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYxEg" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYxEh" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYxEi" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYxEj" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYwvo" resolve="rangeOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYxEk" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z7" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYxJG" role="3o8Qv2">
+          <property role="Xl_RC" value="Must be an integer" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="2yzEsvSYxDZ" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="2yzEsvSYwvo" role="1YuTPh">
+      <property role="TrG5h" value="rangeOp" />
+      <ref role="1YaFvo" to="ztcj:2yzEsvSYwuo" resolve="RangeOp" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2yzEsvSYxKA">
+    <property role="TrG5h" value="typeof_HalfOpenRangeOp" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <node concept="3clFbS" id="2yzEsvSYxKB" role="18ibNy">
+      <node concept="1ZobV4" id="2yzEsvSYxPh" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYxPi" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSYxPj" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSYxPk" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSYxPl" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2mfxo" resolve="Int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYxPm" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYxPn" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYygz" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYy40" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYxKD" resolve="halfOpenRangeOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYyIJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z5" resolve="left" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYxPr" role="3o8Qv2">
+          <property role="Xl_RC" value="Must be an integer" />
+        </node>
+      </node>
+      <node concept="1ZobV4" id="2yzEsvSYxPs" role="3cqZAp">
+        <node concept="mw_s8" id="2yzEsvSYxPt" role="1ZfhKB">
+          <node concept="2ShNRf" id="2yzEsvSYxPu" role="mwGJk">
+            <node concept="3zrR0B" id="2yzEsvSYxPv" role="2ShVmc">
+              <node concept="3Tqbb2" id="2yzEsvSYxPw" role="3zrR0E">
+                <ref role="ehGHo" to="ztcj:9JpoH2mfxo" resolve="Int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2yzEsvSYxPx" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2yzEsvSYxPy" role="mwGJk">
+            <node concept="2OqwBi" id="2yzEsvSYyZe" role="1Z2MuG">
+              <node concept="1YBJjd" id="2yzEsvSYyYm" role="2Oq$k0">
+                <ref role="1YBMHb" node="2yzEsvSYxKD" resolve="halfOpenRangeOp" />
+              </node>
+              <node concept="3TrEf2" id="2yzEsvSYz3b" role="2OqNvi">
+                <ref role="3Tt5mk" to="ztcj:2yzEsvST9Z7" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2yzEsvSYxPA" role="3o8Qv2">
+          <property role="Xl_RC" value="Must be an integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2yzEsvSYxKD" role="1YuTPh">
+      <property role="TrG5h" value="halfOpenRangeOp" />
+      <ref role="1YaFvo" to="ztcj:2yzEsvSYxJW" resolve="HalfOpenRangeOp" />
     </node>
   </node>
 </model>

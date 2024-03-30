@@ -161,26 +161,10 @@
   </node>
   <node concept="1TIwiD" id="9JpoH2nNBa">
     <property role="EcuMT" value="175470559279135178" />
-    <property role="3GE5qa" value="Statements" />
-    <property role="TrG5h" value="Assignment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="PrWs8" id="9JpoH2nNBb" role="PzmwI">
-      <ref role="PrY4T" node="9JpoH2gTQH" resolve="Statement" />
-    </node>
-    <node concept="1TJgyj" id="9JpoH2ow1t" role="1TKVEi">
-      <property role="IQ2ns" value="175470559279317085" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="assignee" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="9JpoH2nNBe" resolve="Assignable" />
-    </node>
-    <node concept="1TJgyj" id="9JpoH2nNBt" role="1TKVEi">
-      <property role="IQ2ns" value="175470559279135197" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="assignment" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
-    </node>
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="AssignmentOp" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
   </node>
   <node concept="PlHQZ" id="9JpoH2nNBe">
     <property role="EcuMT" value="175470559279135182" />
@@ -573,6 +557,397 @@
     <property role="3GE5qa" value="Types" />
     <property role="TrG5h" value="ImplicitlyUnwrappedOptional" />
     <ref role="1TJDcQ" node="9JpoH2P7VC" resolve="Optional" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvST9YV">
+    <property role="EcuMT" value="2928370859060273083" />
+    <property role="3GE5qa" value="Statements" />
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="2yzEsvSVZmK" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQH" resolve="Statement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvST9YW">
+    <property role="EcuMT" value="2928370859060273084" />
+    <property role="3GE5qa" value="Statements.Operators" />
+    <property role="TrG5h" value="BinaryOperator" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2yzEsvST9YV" resolve="Operator" />
+    <node concept="1TJgyj" id="2yzEsvST9Z5" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859060273093" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2yzEsvST9Z7" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859060273095" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvST9YY">
+    <property role="EcuMT" value="2928370859060273086" />
+    <property role="3GE5qa" value="Statements.Operators" />
+    <property role="TrG5h" value="UnaryOperator" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2yzEsvST9YV" resolve="Operator" />
+    <node concept="1TJgyj" id="2yzEsvST9Za" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859060273098" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="2yzEsvST9Zj" role="1TKVEl">
+      <property role="IQ2nx" value="2928370859060273107" />
+      <property role="TrG5h" value="position" />
+      <ref role="AX2Wp" node="2yzEsvST9Ze" resolve="UnaryPosition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvST9YZ">
+    <property role="EcuMT" value="2928370859060273087" />
+    <property role="3GE5qa" value="Statements.Operators" />
+    <property role="TrG5h" value="TernaryOperator" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2yzEsvST9YV" resolve="Operator" />
+    <node concept="1TJgyj" id="2yzEsvSX3oQ" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859061294646" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="first" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2yzEsvSX3oS" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859061294648" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="second" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2yzEsvSX3oV" role="1TKVEi">
+      <property role="IQ2ns" value="2928370859061294651" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="third" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="25R3W" id="2yzEsvST9Ze">
+    <property role="3F6X1D" value="2928370859060273102" />
+    <property role="3GE5qa" value="Statements.Operators" />
+    <property role="TrG5h" value="UnaryPosition" />
+    <node concept="25R33" id="2yzEsvST9Zf" role="25R1y">
+      <property role="3tVfz5" value="2928370859060273103" />
+      <property role="TrG5h" value="prefix" />
+    </node>
+    <node concept="25R33" id="2yzEsvST9Zg" role="25R1y">
+      <property role="3tVfz5" value="2928370859060273104" />
+      <property role="TrG5h" value="postfix" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZ79">
+    <property role="EcuMT" value="2928370859061014985" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="AdditionOp" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+    <node concept="PrWs8" id="2yzEsvSVZmN" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZmQ">
+    <property role="EcuMT" value="2928370859061015990" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="SubtractionOp" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+    <node concept="PrWs8" id="2yzEsvSVZmS" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZmW">
+    <property role="EcuMT" value="2928370859061015996" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="MultiplicationOp" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+    <node concept="PrWs8" id="2yzEsvSVZmY" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZn2">
+    <property role="EcuMT" value="2928370859061016002" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="DivisionOp" />
+    <property role="34LRSv" value="/" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZn4">
+    <property role="EcuMT" value="2928370859061016004" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="RemainderOp" />
+    <property role="34LRSv" value="%" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSVZn6">
+    <property role="EcuMT" value="2928370859061016006" />
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <property role="TrG5h" value="MinusUnaryOp" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="2yzEsvST9YY" resolve="UnaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW21x">
+    <property role="EcuMT" value="2928370859061026913" />
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <property role="TrG5h" value="PlusUnaryOp" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="2yzEsvST9YY" resolve="UnaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kL">
+    <property role="EcuMT" value="2928370859061036337" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="MultiplyAssignOp" />
+    <property role="34LRSv" value="*=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kP">
+    <property role="EcuMT" value="2928370859061036341" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="DivideAssignOp" />
+    <property role="34LRSv" value="/=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kR">
+    <property role="EcuMT" value="2928370859061036343" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="RemainderAssignOp" />
+    <property role="34LRSv" value="%=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kU">
+    <property role="EcuMT" value="2928370859061036346" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="AddAssignOp" />
+    <property role="34LRSv" value="+=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kW">
+    <property role="EcuMT" value="2928370859061036348" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="SubtractAssignOp" />
+    <property role="34LRSv" value="-=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4kZ">
+    <property role="EcuMT" value="2928370859061036351" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="LeftBitShiftAssignOp" />
+    <property role="34LRSv" value="&lt;&lt;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4l3">
+    <property role="EcuMT" value="2928370859061036355" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="RightBitShiftAssignOp" />
+    <property role="34LRSv" value="&gt;&gt;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4l8">
+    <property role="EcuMT" value="2928370859061036360" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="BitwiseAndAssignOp" />
+    <property role="34LRSv" value="&amp;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lc">
+    <property role="EcuMT" value="2928370859061036364" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="BitwiseOrAssignOp" />
+    <property role="34LRSv" value="|=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lf">
+    <property role="EcuMT" value="2928370859061036367" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="BitwiseXorAssignOp" />
+    <property role="34LRSv" value="^=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lj">
+    <property role="EcuMT" value="2928370859061036371" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="MultiplyOverflowAssignOp" />
+    <property role="34LRSv" value="&amp;*=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lo">
+    <property role="EcuMT" value="2928370859061036376" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="AddOverflowAssignOp" />
+    <property role="34LRSv" value="&amp;+=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4ls">
+    <property role="EcuMT" value="2928370859061036380" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="SubtractOverflowAssignOp" />
+    <property role="34LRSv" value="&amp;-=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lw">
+    <property role="EcuMT" value="2928370859061036384" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="LeftBitShiftIgnoreOverflowAssignOp" />
+    <property role="34LRSv" value="&amp;&lt;&lt;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lz">
+    <property role="EcuMT" value="2928370859061036387" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="RightBitShiftIgnoreOverflowAssignOp" />
+    <property role="34LRSv" value="&amp;&gt;&gt;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lB">
+    <property role="EcuMT" value="2928370859061036391" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="PointwiseBitwiseAndAssignOp" />
+    <property role="34LRSv" value=".&amp;=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lH">
+    <property role="EcuMT" value="2928370859061036397" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="PointwiseBitwiseOrAssignOp" />
+    <property role="34LRSv" value=".|=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSW4lM">
+    <property role="EcuMT" value="2928370859061036402" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="PointwiseBitwiseXorAssignOp" />
+    <property role="34LRSv" value=".^=" />
+    <ref role="1TJDcQ" node="9JpoH2nNBa" resolve="AssignmentOp" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1NR">
+    <property role="EcuMT" value="2928370859061288183" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="ComparisonOperator" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+    <node concept="PrWs8" id="2yzEsvSX1NZ" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1NW">
+    <property role="EcuMT" value="2928370859061288188" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="EqualToOp" />
+    <property role="34LRSv" value="==" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1O3">
+    <property role="EcuMT" value="2928370859061288195" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="NotEqualToOp" />
+    <property role="34LRSv" value="!=" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1O6">
+    <property role="EcuMT" value="2928370859061288198" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="GreaterThanOp" />
+    <property role="34LRSv" value="&gt;=" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1O9">
+    <property role="EcuMT" value="2928370859061288201" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="LessThanOp" />
+    <property role="34LRSv" value="&lt;" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1Oc">
+    <property role="EcuMT" value="2928370859061288204" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="GreaterThanOrEqualOp" />
+    <property role="34LRSv" value="&gt;=" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX1Og">
+    <property role="EcuMT" value="2928370859061288208" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Comparison" />
+    <property role="TrG5h" value="LessThanOrEqualTo" />
+    <property role="34LRSv" value="&lt;=" />
+    <ref role="1TJDcQ" node="2yzEsvSX1NR" resolve="ComparisonOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSX3oO">
+    <property role="EcuMT" value="2928370859061294644" />
+    <property role="3GE5qa" value="Statements.Operators.Ternary" />
+    <property role="TrG5h" value="TernaryConditionalOp" />
+    <ref role="1TJDcQ" node="2yzEsvST9YZ" resolve="TernaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSYvxF">
+    <property role="EcuMT" value="2928370859061672043" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="NilCoalescingOp" />
+    <property role="34LRSv" value="??" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+    <node concept="PrWs8" id="2yzEsvSYvxI" role="PzmwI">
+      <ref role="PrY4T" node="9JpoH2gTQM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSYwuo">
+    <property role="EcuMT" value="2928370859061675928" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="RangeOp" />
+    <property role="34LRSv" value="..." />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSYxJW">
+    <property role="EcuMT" value="2928370859061681148" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="HalfOpenRangeOp" />
+    <property role="34LRSv" value="..&lt;" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSZqfs">
+    <property role="EcuMT" value="2928370859061912540" />
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <property role="TrG5h" value="OneSidedRangeOp" />
+    <property role="34LRSv" value="..." />
+    <ref role="1TJDcQ" node="2yzEsvST9YY" resolve="UnaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSZss9">
+    <property role="EcuMT" value="2928370859061921545" />
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <property role="TrG5h" value="OneSidedHalfOpenRange" />
+    <property role="34LRSv" value="..&lt;" />
+    <ref role="1TJDcQ" node="2yzEsvST9YY" resolve="UnaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSZuWt">
+    <property role="EcuMT" value="2928370859061931805" />
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <property role="TrG5h" value="LogicalNotOp" />
+    <property role="34LRSv" value="!" />
+    <ref role="1TJDcQ" node="2yzEsvST9YY" resolve="UnaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSZxwQ">
+    <property role="EcuMT" value="2928370859061942326" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="LogcalAndOp" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2yzEsvSZxwS">
+    <property role="EcuMT" value="2928370859061942328" />
+    <property role="3GE5qa" value="Statements.Operators.Binary" />
+    <property role="TrG5h" value="LogicalOrOp" />
+    <property role="34LRSv" value="||" />
+    <ref role="1TJDcQ" node="2yzEsvST9YW" resolve="BinaryOperator" />
   </node>
 </model>
 

@@ -322,5 +322,135 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2yzEsvSVZn8">
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <ref role="13h7C2" to="ztcj:2yzEsvSVZn6" resolve="MinusUnaryOp" />
+    <node concept="13hLZK" id="2yzEsvSVZn9" role="13h7CW">
+      <node concept="3clFbS" id="2yzEsvSVZna" role="2VODD2">
+        <node concept="3clFbF" id="2yzEsvSVZns" role="3cqZAp">
+          <node concept="37vLTI" id="2yzEsvSW0cc" role="3clFbG">
+            <node concept="2OqwBi" id="2yzEsvSW18C" role="37vLTx">
+              <node concept="1XH99k" id="2yzEsvSW0fT" role="2Oq$k0">
+                <ref role="1XH99l" to="ztcj:2yzEsvST9Ze" resolve="UnaryPosition" />
+              </node>
+              <node concept="2ViDtV" id="2yzEsvSW1Xa" role="2OqNvi">
+                <ref role="2ViDtZ" to="ztcj:2yzEsvST9Zf" resolve="prefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2yzEsvSVZ_o" role="37vLTJ">
+              <node concept="13iPFW" id="2yzEsvSVZnr" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2yzEsvSVZZL" role="2OqNvi">
+                <ref role="3TsBF5" to="ztcj:2yzEsvST9Zj" resolve="position" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2yzEsvSW21z">
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <ref role="13h7C2" to="ztcj:2yzEsvSW21x" resolve="PlusUnaryOp" />
+    <node concept="13hLZK" id="2yzEsvSW21$" role="13h7CW">
+      <node concept="3clFbS" id="2yzEsvSW21_" role="2VODD2">
+        <node concept="3clFbF" id="2yzEsvSW21R" role="3cqZAp">
+          <node concept="37vLTI" id="2yzEsvSW2Po" role="3clFbG">
+            <node concept="2OqwBi" id="2yzEsvSW3Kk" role="37vLTx">
+              <node concept="1XH99k" id="2yzEsvSW2R_" role="2Oq$k0">
+                <ref role="1XH99l" to="ztcj:2yzEsvST9Ze" resolve="UnaryPosition" />
+              </node>
+              <node concept="2ViDtV" id="2yzEsvSW4cp" role="2OqNvi">
+                <ref role="2ViDtZ" to="ztcj:2yzEsvST9Zf" resolve="prefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2yzEsvSW2dZ" role="37vLTJ">
+              <node concept="13iPFW" id="2yzEsvSW21Q" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2yzEsvSW2CX" role="2OqNvi">
+                <ref role="3TsBF5" to="ztcj:2yzEsvST9Zj" resolve="position" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2yzEsvSZqfw">
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <ref role="13h7C2" to="ztcj:2yzEsvSZqfs" resolve="OneSidedRangeOp" />
+    <node concept="13hLZK" id="2yzEsvSZqfx" role="13h7CW">
+      <node concept="3clFbS" id="2yzEsvSZqfy" role="2VODD2">
+        <node concept="3clFbF" id="2yzEsvSZqfO" role="3cqZAp">
+          <node concept="37vLTI" id="2yzEsvSZr1g" role="3clFbG">
+            <node concept="2OqwBi" id="2yzEsvSZrXG" role="37vLTx">
+              <node concept="1XH99k" id="2yzEsvSZr3t" role="2Oq$k0">
+                <ref role="1XH99l" to="ztcj:2yzEsvST9Ze" resolve="UnaryPosition" />
+              </node>
+              <node concept="2ViDtV" id="2yzEsvSZspL" role="2OqNvi">
+                <ref role="2ViDtZ" to="ztcj:2yzEsvST9Zf" resolve="prefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2yzEsvSZqrA" role="37vLTJ">
+              <node concept="13iPFW" id="2yzEsvSZqfN" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2yzEsvSZqOP" role="2OqNvi">
+                <ref role="3TsBF5" to="ztcj:2yzEsvST9Zj" resolve="position" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2yzEsvSZssc">
+    <property role="3GE5qa" value="Statements.Operators.Unary" />
+    <ref role="13h7C2" to="ztcj:2yzEsvSZss9" resolve="OneSidedHalfOpenRange" />
+    <node concept="13hLZK" id="2yzEsvSZssd" role="13h7CW">
+      <node concept="3clFbS" id="2yzEsvSZsse" role="2VODD2">
+        <node concept="3clFbF" id="2yzEsvSZssw" role="3cqZAp">
+          <node concept="37vLTI" id="2yzEsvSZtfc" role="3clFbG">
+            <node concept="2OqwBi" id="2yzEsvSZua7" role="37vLTx">
+              <node concept="1XH99k" id="2yzEsvSZtho" role="2Oq$k0">
+                <ref role="1XH99l" to="ztcj:2yzEsvST9Ze" resolve="UnaryPosition" />
+              </node>
+              <node concept="2ViDtV" id="2yzEsvSZuVK" role="2OqNvi">
+                <ref role="2ViDtZ" to="ztcj:2yzEsvST9Zf" resolve="prefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2yzEsvSZsCi" role="37vLTJ">
+              <node concept="13iPFW" id="2yzEsvSZssv" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2yzEsvSZt2F" role="2OqNvi">
+                <ref role="3TsBF5" to="ztcj:2yzEsvST9Zj" resolve="position" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2yzEsvSZuWw">
+    <property role="3GE5qa" value="Statements.Operators.Binary.Assignment" />
+    <ref role="13h7C2" to="ztcj:2yzEsvSZuWt" resolve="LogicalNotOp" />
+    <node concept="13hLZK" id="2yzEsvSZuWx" role="13h7CW">
+      <node concept="3clFbS" id="2yzEsvSZuWy" role="2VODD2">
+        <node concept="3clFbF" id="2yzEsvSZuX4" role="3cqZAp">
+          <node concept="37vLTI" id="2yzEsvSZvJr" role="3clFbG">
+            <node concept="2OqwBi" id="2yzEsvSZwIv" role="37vLTx">
+              <node concept="1XH99k" id="2yzEsvSZvPK" role="2Oq$k0">
+                <ref role="1XH99l" to="ztcj:2yzEsvST9Ze" resolve="UnaryPosition" />
+              </node>
+              <node concept="2ViDtV" id="2yzEsvSZxw8" role="2OqNvi">
+                <ref role="2ViDtZ" to="ztcj:2yzEsvST9Zf" resolve="prefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2yzEsvSZv96" role="37vLTJ">
+              <node concept="13iPFW" id="2yzEsvSZuX3" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2yzEsvSZvyU" role="2OqNvi">
+                <ref role="3TsBF5" to="ztcj:2yzEsvST9Zj" resolve="position" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

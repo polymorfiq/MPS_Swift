@@ -85,11 +85,11 @@
       <node id="175470559279411442" at="36,55,37,71" concept="2" />
       <node id="175470559279411442" at="38,9,39,0" concept="7" />
       <node id="175470559279411442" at="39,0,40,22" concept="6" />
-      <node id="175470559279444548" at="45,249,46,19" concept="6" />
+      <node id="175470559279444548" at="45,251,46,19" concept="6" />
       <node id="175470559279444794" at="47,5,48,16" concept="6" />
       <node id="175470559279411442" at="50,0,51,0" concept="8" trace="canBeChildBreakingPoint" />
       <node id="175470559279411442" at="53,0,54,0" concept="8" trace="VariableReference$ei" />
-      <node id="175470559279411442" at="54,0,55,0" concept="8" trace="Assignment$Cl" />
+      <node id="175470559279411442" at="54,0,55,0" concept="8" trace="AssignmentOp$Cl" />
       <node id="175470559279411442" at="58,0,59,0" concept="8" trace="referenced$H6MK" />
       <node id="175470559279411442" at="62,0,63,0" concept="8" trace="mutable$DKBG" />
       <node id="175470559279411442" at="25,0,28,0" concept="1" trace="VariableReference_Constraints#()V" />
@@ -101,7 +101,7 @@
       <node id="175470559279411442" at="29,0,44,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="175470559279411442" at="25,42,26,41" />
       <scope id="175470559279411442" at="36,55,37,71" />
-      <scope id="175470559279412318" at="45,249,46,19" />
+      <scope id="175470559279412318" at="45,251,46,19" />
       <scope id="175470559279411442" at="25,0,28,0" />
       <scope id="175470559279411444" at="44,128,48,16" />
       <scope id="175470559279411442" at="44,0,50,0">

@@ -42,7 +42,7 @@ public class VariableReference_Constraints extends BaseConstraintsDescriptor {
     };
   }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
-    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(parentNode)), CONCEPTS.Assignment$Cl) && !(SPropertyOperations.getBoolean(SLinkOperations.getTarget(node, LINKS.referenced$H6MK), PROPS.mutable$DKBG))) {
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(parentNode)), CONCEPTS.AssignmentOp$Cl) && !(SPropertyOperations.getBoolean(SLinkOperations.getTarget(node, LINKS.referenced$H6MK), PROPS.mutable$DKBG))) {
       return false;
     }
     return true;
@@ -51,7 +51,7 @@ public class VariableReference_Constraints extends BaseConstraintsDescriptor {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept VariableReference$ei = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39e3L, "Swift.structure.VariableReference");
-    /*package*/ static final SConcept Assignment$Cl = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.Assignment");
+    /*package*/ static final SConcept AssignmentOp$Cl = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.AssignmentOp");
   }
 
   private static final class LINKS {

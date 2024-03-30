@@ -215,7 +215,7 @@
               </node>
               <node concept="2Zo12i" id="9JpoH2oTx0" role="2OqNvi">
                 <node concept="chp4Y" id="9JpoH2oTC$" role="2Zo12j">
-                  <ref role="cht4Q" to="ztcj:9JpoH2nNBa" resolve="Assignment" />
+                  <ref role="cht4Q" to="ztcj:9JpoH2nNBa" resolve="AssignmentOp" />
                 </node>
               </node>
             </node>

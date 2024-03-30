@@ -4992,7 +4992,7 @@
               <node concept="2Zo12i" id="kN" role="2OqNvi">
                 <uo k="s:originTrace" v="n:175470559279421504" />
                 <node concept="chp4Y" id="kQ" role="2Zo12j">
-                  <ref role="cht4Q" to="ztcj:9JpoH2nNBa" resolve="Assignment" />
+                  <ref role="cht4Q" to="ztcj:9JpoH2nNBa" resolve="AssignmentOp" />
                   <uo k="s:originTrace" v="n:175470559279421988" />
                 </node>
               </node>

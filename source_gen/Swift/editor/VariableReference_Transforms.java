@@ -109,8 +109,8 @@ public class VariableReference_Transforms extends TransformationMenuBase {
 
       @Override
       public void execute(@NotNull String pattern) {
-        SNode assignment = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.Assignment"));
-        SLinkOperations.setTarget(assignment, LINKS.assignee$YL1w, SNodeOperations.copyNode(_context.getNode()));
+        SNode assignment = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, "Swift.structure.AssignmentOp"));
+        SLinkOperations.setTarget(assignment, LINKS.left$lI29, SNodeOperations.copyNode(_context.getNode()));
         SNodeOperations.replaceWithAnother(_context.getNode(), assignment);
         SelectionUtil.selectCell(_context.getEditorContext(), assignment, SelectionManager.LAST_EDITABLE_CELL);
       }
@@ -136,6 +136,6 @@ public class VariableReference_Transforms extends TransformationMenuBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink assignee$YL1w = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39caL, 0x26f658b4262005dL, "assignee");
+    /*package*/ static final SContainmentLink left$lI29 = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbcL, 0x28a3a9c7f8e49fc5L, "left");
   }
 }
