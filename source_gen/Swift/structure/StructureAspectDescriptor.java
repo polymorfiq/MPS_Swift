@@ -19,10 +19,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAddAssignOp = createDescriptorForAddAssignOp();
   /*package*/ final ConceptDescriptor myConceptAddOverflowAssignOp = createDescriptorForAddOverflowAssignOp();
   /*package*/ final ConceptDescriptor myConceptAdditionOp = createDescriptorForAdditionOp();
+  /*package*/ final ConceptDescriptor myConceptArray = createDescriptorForArray();
+  /*package*/ final ConceptDescriptor myConceptArrayEmpty = createDescriptorForArrayEmpty();
+  /*package*/ final ConceptDescriptor myConceptArrayValue = createDescriptorForArrayValue();
   /*package*/ final ConceptDescriptor myConceptAssignable = createDescriptorForAssignable();
   /*package*/ final ConceptDescriptor myConceptAssignmentOp = createDescriptorForAssignmentOp();
   /*package*/ final ConceptDescriptor myConceptBinaryOperator = createDescriptorForBinaryOperator();
   /*package*/ final ConceptDescriptor myConceptBitwiseAndAssignOp = createDescriptorForBitwiseAndAssignOp();
+  /*package*/ final ConceptDescriptor myConceptBitwiseNotOp = createDescriptorForBitwiseNotOp();
   /*package*/ final ConceptDescriptor myConceptBitwiseOrAssignOp = createDescriptorForBitwiseOrAssignOp();
   /*package*/ final ConceptDescriptor myConceptBitwiseXorAssignOp = createDescriptorForBitwiseXorAssignOp();
   /*package*/ final ConceptDescriptor myConceptBool = createDescriptorForBool();
@@ -32,6 +36,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCommentSingleLine = createDescriptorForCommentSingleLine();
   /*package*/ final ConceptDescriptor myConceptComparisonOperator = createDescriptorForComparisonOperator();
   /*package*/ final ConceptDescriptor myConceptConstantDecl = createDescriptorForConstantDecl();
+  /*package*/ final ConceptDescriptor myConceptDictKeyValue = createDescriptorForDictKeyValue();
+  /*package*/ final ConceptDescriptor myConceptDictValue = createDescriptorForDictValue();
+  /*package*/ final ConceptDescriptor myConceptDictionary = createDescriptorForDictionary();
+  /*package*/ final ConceptDescriptor myConceptDictionaryEmpty = createDescriptorForDictionaryEmpty();
+  /*package*/ final ConceptDescriptor myConceptDictionaryKeyValue = createDescriptorForDictionaryKeyValue();
   /*package*/ final ConceptDescriptor myConceptDivideAssignOp = createDescriptorForDivideAssignOp();
   /*package*/ final ConceptDescriptor myConceptDivisionOp = createDescriptorForDivisionOp();
   /*package*/ final ConceptDescriptor myConceptDouble = createDescriptorForDouble();
@@ -48,6 +57,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptImplicitlyUnwrappedOptional = createDescriptorForImplicitlyUnwrappedOptional();
   /*package*/ final ConceptDescriptor myConceptInt = createDescriptorForInt();
   /*package*/ final ConceptDescriptor myConceptIntValue = createDescriptorForIntValue();
+  /*package*/ final ConceptDescriptor myConceptInterpolatableString = createDescriptorForInterpolatableString();
   /*package*/ final ConceptDescriptor myConceptLeftBitShiftAssignOp = createDescriptorForLeftBitShiftAssignOp();
   /*package*/ final ConceptDescriptor myConceptLeftBitShiftIgnoreOverflowAssignOp = createDescriptorForLeftBitShiftIgnoreOverflowAssignOp();
   /*package*/ final ConceptDescriptor myConceptLessThanOp = createDescriptorForLessThanOp();
@@ -58,6 +68,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLogicalOrOp = createDescriptorForLogicalOrOp();
   /*package*/ final ConceptDescriptor myConceptMinusUnaryOp = createDescriptorForMinusUnaryOp();
   /*package*/ final ConceptDescriptor myConceptModule = createDescriptorForModule();
+  /*package*/ final ConceptDescriptor myConceptMultilineStringValue = createDescriptorForMultilineStringValue();
   /*package*/ final ConceptDescriptor myConceptMultiplicationOp = createDescriptorForMultiplicationOp();
   /*package*/ final ConceptDescriptor myConceptMultiplyAssignOp = createDescriptorForMultiplyAssignOp();
   /*package*/ final ConceptDescriptor myConceptMultiplyOverflowAssignOp = createDescriptorForMultiplyOverflowAssignOp();
@@ -67,6 +78,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNilCoalescingOp = createDescriptorForNilCoalescingOp();
   /*package*/ final ConceptDescriptor myConceptNilValue = createDescriptorForNilValue();
   /*package*/ final ConceptDescriptor myConceptNotEqualToOp = createDescriptorForNotEqualToOp();
+  /*package*/ final ConceptDescriptor myConceptOneSideRangePostfixOp = createDescriptorForOneSideRangePostfixOp();
   /*package*/ final ConceptDescriptor myConceptOneSidedHalfOpenRange = createDescriptorForOneSidedHalfOpenRange();
   /*package*/ final ConceptDescriptor myConceptOneSidedRangeOp = createDescriptorForOneSidedRangeOp();
   /*package*/ final ConceptDescriptor myConceptOperator = createDescriptorForOperator();
@@ -75,14 +87,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPointwiseBitwiseAndAssignOp = createDescriptorForPointwiseBitwiseAndAssignOp();
   /*package*/ final ConceptDescriptor myConceptPointwiseBitwiseOrAssignOp = createDescriptorForPointwiseBitwiseOrAssignOp();
   /*package*/ final ConceptDescriptor myConceptPointwiseBitwiseXorAssignOp = createDescriptorForPointwiseBitwiseXorAssignOp();
+  /*package*/ final ConceptDescriptor myConceptPointwiseLogicalNotOp = createDescriptorForPointwiseLogicalNotOp();
   /*package*/ final ConceptDescriptor myConceptRangeOp = createDescriptorForRangeOp();
   /*package*/ final ConceptDescriptor myConceptRemainderAssignOp = createDescriptorForRemainderAssignOp();
   /*package*/ final ConceptDescriptor myConceptRemainderOp = createDescriptorForRemainderOp();
   /*package*/ final ConceptDescriptor myConceptRightBitShiftAssignOp = createDescriptorForRightBitShiftAssignOp();
   /*package*/ final ConceptDescriptor myConceptRightBitShiftIgnoreOverflowAssignOp = createDescriptorForRightBitShiftIgnoreOverflowAssignOp();
+  /*package*/ final ConceptDescriptor myConceptSet = createDescriptorForSet();
   /*package*/ final ConceptDescriptor myConceptStatement = createDescriptorForStatement();
   /*package*/ final ConceptDescriptor myConceptString = createDescriptorForString();
+  /*package*/ final ConceptDescriptor myConceptStringInterpolatedExpression = createDescriptorForStringInterpolatedExpression();
+  /*package*/ final ConceptDescriptor myConceptStringRawText = createDescriptorForStringRawText();
   /*package*/ final ConceptDescriptor myConceptStringValue = createDescriptorForStringValue();
+  /*package*/ final ConceptDescriptor myConceptStringable = createDescriptorForStringable();
   /*package*/ final ConceptDescriptor myConceptSubtractAssignOp = createDescriptorForSubtractAssignOp();
   /*package*/ final ConceptDescriptor myConceptSubtractOverflowAssignOp = createDescriptorForSubtractOverflowAssignOp();
   /*package*/ final ConceptDescriptor myConceptSubtractionOp = createDescriptorForSubtractionOp();
@@ -117,7 +134,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddAssignOp, myConceptAddOverflowAssignOp, myConceptAdditionOp, myConceptAssignable, myConceptAssignmentOp, myConceptBinaryOperator, myConceptBitwiseAndAssignOp, myConceptBitwiseOrAssignOp, myConceptBitwiseXorAssignOp, myConceptBool, myConceptBoolValue, myConceptCommentMultiLine, myConceptCommentMultilineLine, myConceptCommentSingleLine, myConceptComparisonOperator, myConceptConstantDecl, myConceptDivideAssignOp, myConceptDivisionOp, myConceptDouble, myConceptDoubleValue, myConceptEmptyStatement, myConceptEqualToOp, myConceptExpression, myConceptFalseValue, myConceptFloat, myConceptFloatValue, myConceptGreaterThanOp, myConceptGreaterThanOrEqualOp, myConceptHalfOpenRangeOp, myConceptImplicitlyUnwrappedOptional, myConceptInt, myConceptIntValue, myConceptLeftBitShiftAssignOp, myConceptLeftBitShiftIgnoreOverflowAssignOp, myConceptLessThanOp, myConceptLessThanOrEqualTo, myConceptLiteralValue, myConceptLogcalAndOp, myConceptLogicalNotOp, myConceptLogicalOrOp, myConceptMinusUnaryOp, myConceptModule, myConceptMultiplicationOp, myConceptMultiplyAssignOp, myConceptMultiplyOverflowAssignOp, myConceptNameValuePair, myConceptNamedEntityDecl, myConceptNil, myConceptNilCoalescingOp, myConceptNilValue, myConceptNotEqualToOp, myConceptOneSidedHalfOpenRange, myConceptOneSidedRangeOp, myConceptOperator, myConceptOptional, myConceptPlusUnaryOp, myConceptPointwiseBitwiseAndAssignOp, myConceptPointwiseBitwiseOrAssignOp, myConceptPointwiseBitwiseXorAssignOp, myConceptRangeOp, myConceptRemainderAssignOp, myConceptRemainderOp, myConceptRightBitShiftAssignOp, myConceptRightBitShiftIgnoreOverflowAssignOp, myConceptStatement, myConceptString, myConceptStringValue, myConceptSubtractAssignOp, myConceptSubtractOverflowAssignOp, myConceptSubtractionOp, myConceptTernaryConditionalOp, myConceptTernaryOperator, myConceptTrueValue, myConceptTuple, myConceptTupleValue, myConceptTypable, myConceptType, myConceptTypeAlias, myConceptTypealiasDecl, myConceptUInt, myConceptUIntValue, myConceptUnaryOperator, myConceptVariable, myConceptVariableDecl, myConceptVariableReference);
+    return Arrays.asList(myConceptAddAssignOp, myConceptAddOverflowAssignOp, myConceptAdditionOp, myConceptArray, myConceptArrayEmpty, myConceptArrayValue, myConceptAssignable, myConceptAssignmentOp, myConceptBinaryOperator, myConceptBitwiseAndAssignOp, myConceptBitwiseNotOp, myConceptBitwiseOrAssignOp, myConceptBitwiseXorAssignOp, myConceptBool, myConceptBoolValue, myConceptCommentMultiLine, myConceptCommentMultilineLine, myConceptCommentSingleLine, myConceptComparisonOperator, myConceptConstantDecl, myConceptDictKeyValue, myConceptDictValue, myConceptDictionary, myConceptDictionaryEmpty, myConceptDictionaryKeyValue, myConceptDivideAssignOp, myConceptDivisionOp, myConceptDouble, myConceptDoubleValue, myConceptEmptyStatement, myConceptEqualToOp, myConceptExpression, myConceptFalseValue, myConceptFloat, myConceptFloatValue, myConceptGreaterThanOp, myConceptGreaterThanOrEqualOp, myConceptHalfOpenRangeOp, myConceptImplicitlyUnwrappedOptional, myConceptInt, myConceptIntValue, myConceptInterpolatableString, myConceptLeftBitShiftAssignOp, myConceptLeftBitShiftIgnoreOverflowAssignOp, myConceptLessThanOp, myConceptLessThanOrEqualTo, myConceptLiteralValue, myConceptLogcalAndOp, myConceptLogicalNotOp, myConceptLogicalOrOp, myConceptMinusUnaryOp, myConceptModule, myConceptMultilineStringValue, myConceptMultiplicationOp, myConceptMultiplyAssignOp, myConceptMultiplyOverflowAssignOp, myConceptNameValuePair, myConceptNamedEntityDecl, myConceptNil, myConceptNilCoalescingOp, myConceptNilValue, myConceptNotEqualToOp, myConceptOneSideRangePostfixOp, myConceptOneSidedHalfOpenRange, myConceptOneSidedRangeOp, myConceptOperator, myConceptOptional, myConceptPlusUnaryOp, myConceptPointwiseBitwiseAndAssignOp, myConceptPointwiseBitwiseOrAssignOp, myConceptPointwiseBitwiseXorAssignOp, myConceptPointwiseLogicalNotOp, myConceptRangeOp, myConceptRemainderAssignOp, myConceptRemainderOp, myConceptRightBitShiftAssignOp, myConceptRightBitShiftIgnoreOverflowAssignOp, myConceptSet, myConceptStatement, myConceptString, myConceptStringInterpolatedExpression, myConceptStringRawText, myConceptStringValue, myConceptStringable, myConceptSubtractAssignOp, myConceptSubtractOverflowAssignOp, myConceptSubtractionOp, myConceptTernaryConditionalOp, myConceptTernaryOperator, myConceptTrueValue, myConceptTuple, myConceptTupleValue, myConceptTypable, myConceptType, myConceptTypeAlias, myConceptTypealiasDecl, myConceptUInt, myConceptUIntValue, myConceptUnaryOperator, myConceptVariable, myConceptVariableDecl, myConceptVariableReference);
   }
 
   @Override
@@ -130,6 +147,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAddOverflowAssignOp;
       case LanguageConceptSwitch.AdditionOp:
         return myConceptAdditionOp;
+      case LanguageConceptSwitch.Array:
+        return myConceptArray;
+      case LanguageConceptSwitch.ArrayEmpty:
+        return myConceptArrayEmpty;
+      case LanguageConceptSwitch.ArrayValue:
+        return myConceptArrayValue;
       case LanguageConceptSwitch.Assignable:
         return myConceptAssignable;
       case LanguageConceptSwitch.AssignmentOp:
@@ -138,6 +161,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBinaryOperator;
       case LanguageConceptSwitch.BitwiseAndAssignOp:
         return myConceptBitwiseAndAssignOp;
+      case LanguageConceptSwitch.BitwiseNotOp:
+        return myConceptBitwiseNotOp;
       case LanguageConceptSwitch.BitwiseOrAssignOp:
         return myConceptBitwiseOrAssignOp;
       case LanguageConceptSwitch.BitwiseXorAssignOp:
@@ -156,6 +181,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptComparisonOperator;
       case LanguageConceptSwitch.ConstantDecl:
         return myConceptConstantDecl;
+      case LanguageConceptSwitch.DictKeyValue:
+        return myConceptDictKeyValue;
+      case LanguageConceptSwitch.DictValue:
+        return myConceptDictValue;
+      case LanguageConceptSwitch.Dictionary:
+        return myConceptDictionary;
+      case LanguageConceptSwitch.DictionaryEmpty:
+        return myConceptDictionaryEmpty;
+      case LanguageConceptSwitch.DictionaryKeyValue:
+        return myConceptDictionaryKeyValue;
       case LanguageConceptSwitch.DivideAssignOp:
         return myConceptDivideAssignOp;
       case LanguageConceptSwitch.DivisionOp:
@@ -188,6 +223,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptInt;
       case LanguageConceptSwitch.IntValue:
         return myConceptIntValue;
+      case LanguageConceptSwitch.InterpolatableString:
+        return myConceptInterpolatableString;
       case LanguageConceptSwitch.LeftBitShiftAssignOp:
         return myConceptLeftBitShiftAssignOp;
       case LanguageConceptSwitch.LeftBitShiftIgnoreOverflowAssignOp:
@@ -208,6 +245,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMinusUnaryOp;
       case LanguageConceptSwitch.Module:
         return myConceptModule;
+      case LanguageConceptSwitch.MultilineStringValue:
+        return myConceptMultilineStringValue;
       case LanguageConceptSwitch.MultiplicationOp:
         return myConceptMultiplicationOp;
       case LanguageConceptSwitch.MultiplyAssignOp:
@@ -226,6 +265,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNilValue;
       case LanguageConceptSwitch.NotEqualToOp:
         return myConceptNotEqualToOp;
+      case LanguageConceptSwitch.OneSideRangePostfixOp:
+        return myConceptOneSideRangePostfixOp;
       case LanguageConceptSwitch.OneSidedHalfOpenRange:
         return myConceptOneSidedHalfOpenRange;
       case LanguageConceptSwitch.OneSidedRangeOp:
@@ -242,6 +283,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPointwiseBitwiseOrAssignOp;
       case LanguageConceptSwitch.PointwiseBitwiseXorAssignOp:
         return myConceptPointwiseBitwiseXorAssignOp;
+      case LanguageConceptSwitch.PointwiseLogicalNotOp:
+        return myConceptPointwiseLogicalNotOp;
       case LanguageConceptSwitch.RangeOp:
         return myConceptRangeOp;
       case LanguageConceptSwitch.RemainderAssignOp:
@@ -252,12 +295,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRightBitShiftAssignOp;
       case LanguageConceptSwitch.RightBitShiftIgnoreOverflowAssignOp:
         return myConceptRightBitShiftIgnoreOverflowAssignOp;
+      case LanguageConceptSwitch.Set:
+        return myConceptSet;
       case LanguageConceptSwitch.Statement:
         return myConceptStatement;
       case LanguageConceptSwitch.String:
         return myConceptString;
+      case LanguageConceptSwitch.StringInterpolatedExpression:
+        return myConceptStringInterpolatedExpression;
+      case LanguageConceptSwitch.StringRawText:
+        return myConceptStringRawText;
       case LanguageConceptSwitch.StringValue:
         return myConceptStringValue;
+      case LanguageConceptSwitch.Stringable:
+        return myConceptStringable;
       case LanguageConceptSwitch.SubtractAssignOp:
         return myConceptSubtractAssignOp;
       case LanguageConceptSwitch.SubtractOverflowAssignOp:
@@ -339,6 +390,38 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("+");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForArray() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Array", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f94ef200L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.Type
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f878L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859067240960");
+    b.version(3);
+    b.aggregate("ofType", 0x28a3a9c7f94ef202L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859067240962").done();
+    b.alias("[");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForArrayEmpty() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "ArrayEmpty", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f96bb6eaL);
+    b.class_(false, false, false);
+    // extends: Swift.structure.Type
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f878L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859069126378");
+    b.version(3);
+    b.alias("[]");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForArrayValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "ArrayValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f9625c0aL);
+    b.class_(false, false, false);
+    // extends: Swift.structure.LiteralValue
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4268ca25L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859068513290");
+    b.version(3);
+    b.aggregate("values", 0x28a3a9c7f9625c0bL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439db2L).optional(true).ordered(true).multiple(true).origin("2928370859068513291").done();
+    b.alias("[");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAssignable() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Assignable", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b425f39ceL);
     b.interface_();
@@ -375,6 +458,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859061036360");
     b.version(3);
     b.alias("&=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForBitwiseNotOp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "BitwiseNotOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f932436eL);
+    b.class_(false, false, false);
+    // extends: Swift.structure.UnaryOperator
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbeL);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859065361262");
+    b.version(3);
+    b.alias("~");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBitwiseOrAssignOp() {
@@ -464,6 +557,57 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/175470559277325723");
     b.version(3);
     b.alias("let");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDictKeyValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "DictKeyValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f965b9e7L);
+    b.class_(false, false, false);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859068733927");
+    b.version(3);
+    b.aggregate("key", 0x28a3a9c7f965b9e8L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439db2L).optional(false).ordered(true).multiple(false).origin("2928370859068733928").done();
+    b.aggregate("value", 0x28a3a9c7f965b9eaL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439db2L).optional(false).ordered(true).multiple(false).origin("2928370859068733930").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDictValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "DictValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f965b9e6L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.LiteralValue
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4268ca25L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859068733926");
+    b.version(3);
+    b.aggregate("key_values", 0x28a3a9c7f965b9efL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f965b9e7L).optional(true).ordered(true).multiple(true).origin("2928370859068733935").done();
+    b.alias("dict");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDictionary() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Dictionary", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f95f01b9L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.Type
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f878L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859068293561");
+    b.version(3);
+    b.aggregate("keyType", 0x28a3a9c7f95f01bbL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859068293563").done();
+    b.aggregate("valType", 0x28a3a9c7f95f01bdL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859068293565").done();
+    b.alias("dict");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDictionaryEmpty() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "DictionaryEmpty", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f9705718L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.Type
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f878L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859069429528");
+    b.version(3);
+    b.alias("[:]");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDictionaryKeyValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "DictionaryKeyValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f9726f00L);
+    b.class_(false, false, false);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859069566720");
+    b.version(3);
+    b.aggregate("keyType", 0x28a3a9c7f9726f03L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859069566723").done();
+    b.aggregate("valType", 0x28a3a9c7f9726f05L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859069566725").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDivideAssignOp() {
@@ -624,6 +768,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("value", 0x26f658b4275d3bbL).type(PrimitiveTypeId.STRING).origin("175470559280616379").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForInterpolatableString() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "InterpolatableString", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90e8676L);
+    b.class_(false, false, false);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859063019126");
+    b.version(3);
+    b.aggregate("contents", 0x28a3a9c7f90e8677L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90160e7L).optional(false).ordered(true).multiple(true).origin("2928370859063019127").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForLeftBitShiftAssignOp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "LeftBitShiftAssignOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8f0453fL);
     b.class_(false, false, false);
@@ -683,11 +835,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLogicalNotOp() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "LogicalNotOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8fdef1dL);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "LogicalNotOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f9321f35L);
     b.class_(false, false, false);
     // extends: Swift.structure.UnaryOperator
     b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbeL);
-    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859061931805");
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859065351989");
     b.version(3);
     b.alias("!");
     return b.create();
@@ -719,6 +871,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/175470559277325739");
     b.version(3);
     b.aggregate("body", 0x26f658b42439db8L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439dadL).optional(true).ordered(true).multiple(true).origin("175470559277325752").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMultilineStringValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "MultilineStringValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8fe6771L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.LiteralValue
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4268ca25L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859061962609");
+    b.version(3);
+    b.aggregate("lines", 0x28a3a9c7f90b889dL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90e8676L).optional(true).ordered(true).multiple(true).origin("2928370859062823069").done();
+    b.alias("\"\"\"");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMultiplicationOp() {
@@ -813,6 +976,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("!=");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForOneSideRangePostfixOp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "OneSideRangePostfixOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f9324551L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.UnaryOperator
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbeL);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859065361745");
+    b.version(3);
+    b.alias("...");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForOneSidedHalfOpenRange() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "OneSidedHalfOpenRange", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8fdc709L);
     b.class_(false, false, false);
@@ -891,6 +1064,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias(".^=");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForPointwiseLogicalNotOp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "PointwiseLogicalNotOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f93241b4L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.UnaryOperator
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8e49fbeL);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859065360820");
+    b.version(3);
+    b.alias(".!");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRangeOp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "RangeOp", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f8fa0798L);
     b.class_(false, false, false);
@@ -941,6 +1124,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("&>>=");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Set", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f95b36a8L);
+    b.class_(false, false, false);
+    // extends: Swift.structure.Type
+    b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f878L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859068044968");
+    b.version(3);
+    b.aggregate("ofType", 0x28a3a9c7f95b36c1L).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L).optional(false).ordered(true).multiple(false).origin("2928370859068044993").done();
+    b.alias("Set");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForStatement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Statement", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439dadL);
     b.interface_();
@@ -958,6 +1152,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("String");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForStringInterpolatedExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "StringInterpolatedExpression", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f91dae5bL);
+    b.class_(false, false, false);
+    b.parent(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90160e7L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859064012379");
+    b.version(3);
+    b.aggregate("expression", 0x28a3a9c7f91dae5cL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42439db2L).optional(false).ordered(true).multiple(false).origin("2928370859064012380").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForStringRawText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "StringRawText", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90160e4L);
+    b.class_(false, false, false);
+    b.parent(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90160e7L);
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859062157540");
+    b.version(3);
+    b.property("content", 0x28a3a9c7f90160f1L).type(PrimitiveTypeId.STRING).origin("2928370859062157553").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForStringValue() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "StringValue", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4268ca21L);
     b.class_(false, false, false);
@@ -965,8 +1177,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4268ca25L);
     b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/175470559279761953");
     b.version(3);
-    b.property("value", 0x26f658b4268ca3fL).type(PrimitiveTypeId.STRING).origin("175470559279761983").done();
+    b.property("extendedDelimiter", 0x28a3a9c7f92399ccL).type(PrimitiveTypeId.STRING).origin("2928370859064400332").done();
+    b.aggregate("content", 0x28a3a9c7f90e867bL).target(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90e8676L).optional(false).ordered(true).multiple(false).origin("2928370859063019131").done();
     b.alias("\"");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForStringable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Swift", "Stringable", 0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f90160e7L);
+    b.interface_();
+    b.origin("r:f66bab3a-b647-49e3-9e98-90aefd17b024(Swift.structure)/2928370859062157543");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubtractAssignOp() {

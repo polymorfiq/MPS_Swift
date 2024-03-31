@@ -10,6 +10,14 @@ import jetbrains.mps.lang.typesystem.runtime.InequationReplacementRule_Runtime;
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
     {
+      InferenceRule_Runtime inferenceRule = new typeof_Array_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_ArrayValue_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
       InferenceRule_Runtime inferenceRule = new typeof_Assignment_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -19,6 +27,22 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     {
       InferenceRule_Runtime inferenceRule = new typeof_ComparisonOperator_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_DictKeyValue_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_DictValue_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_Dictionary_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_DictionaryKeyValue_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {
@@ -78,6 +102,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
+      InferenceRule_Runtime inferenceRule = new typeof_Set_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
       InferenceRule_Runtime inferenceRule = new typeof_String_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -124,6 +152,14 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       ComparisonRule_Runtime comparisonRule = new WildcardOptionals_ComparisonRule();
       this.myComparisonRules.add(comparisonRule);
+    }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new ArrayEmpty_subtypes_Array_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new DictionaryEmpty_subtypes_Dictionary_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
     }
     {
       InequationReplacementRule_Runtime eliminationRule = new optionals_supertype_InequationReplacementRule();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="68tnl1npyvfn2qkdp6v1x1m9uc1nwby">
-  <files names="ConstantDecl_Constraints.java:ConstraintsAspectDescriptor.java:DoubleValue_Constraints.java:FloatValue_Constraints.java:IntValue_Constraints.java:UIntValue_Constraints.java:VariableDecl_Constraints.java:VariableReference_Constraints.java:Variable_Constraints.java" />
+<product version="3" modelHash="7zynll6vpvk7kqq4bymbw3wkqemfgsg">
+  <files names="ConstantDecl_Constraints.java:ConstraintsAspectDescriptor.java:DoubleValue_Constraints.java:FloatValue_Constraints.java:IntValue_Constraints.java:StringRawText_Constraints.java:UIntValue_Constraints.java:VariableDecl_Constraints.java:VariableReference_Constraints.java:Variable_Constraints.java" />
 </product>
 
