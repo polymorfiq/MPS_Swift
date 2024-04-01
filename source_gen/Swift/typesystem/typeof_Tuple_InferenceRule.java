@@ -7,19 +7,26 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typesystem.inference.EquationInfo;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class typeof_Tuple_InferenceRule extends AbstractInferenceRule_Runtime implements InferenceRule_Runtime {
   public typeof_Tuple_InferenceRule() {
   }
   public void applyRule(final SNode tuple, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    final SNode tupleValTypes = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f99b8a36L, "Swift.structure.TupleValTypes"));
+    ListSequence.fromList(SLinkOperations.getChildren(tuple, LINKS.elements$1GrB)).visitAll((elem) -> ListSequence.fromList(SLinkOperations.getChildren(tupleValTypes, LINKS.valTypes$Cvqc)).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(elem, LINKS.valType$Wfqe))));
     {
       SNode _nodeToCheck_1029348928467 = tuple;
-      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285771813", 0, null);
-      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "175470559285770478", true), (SNode) tuple, _info_12389875345);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859072351653", 0, null);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:0c6516bc-67ad-43d0-9e62-91eb10f7a8b8(Swift.typesystem)", "2928370859072348294", true), (SNode) tupleValTypes, _info_12389875345);
     }
   }
   public SAbstractConcept getApplicableConcept() {
@@ -30,6 +37,12 @@ public class typeof_Tuple_InferenceRule extends AbstractInferenceRule_Runtime im
   }
   public boolean overrides() {
     return false;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink elements$1GrB = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42c47863L, 0x26f658b42c47875L, "elements");
+    /*package*/ static final SContainmentLink valTypes$Cvqc = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f99b8a36L, 0x28a3a9c7f99b8a37L, "valTypes");
+    /*package*/ static final SContainmentLink valType$Wfqe = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f99b8116L, 0x28a3a9c7f99b8119L, "valType");
   }
 
   private static final class CONCEPTS {

@@ -44,6 +44,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FalseValue;
   private ConceptPresentation props_Float;
   private ConceptPresentation props_FloatValue;
+  private ConceptPresentation props_FuncDefinition;
+  private ConceptPresentation props_FuncParam;
+  private ConceptPresentation props_Function;
   private ConceptPresentation props_GreaterThanOp;
   private ConceptPresentation props_GreaterThanOrEqualOp;
   private ConceptPresentation props_HalfOpenRangeOp;
@@ -84,6 +87,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RangeOp;
   private ConceptPresentation props_RemainderAssignOp;
   private ConceptPresentation props_RemainderOp;
+  private ConceptPresentation props_Return;
   private ConceptPresentation props_RightBitShiftAssignOp;
   private ConceptPresentation props_RightBitShiftIgnoreOverflowAssignOp;
   private ConceptPresentation props_Set;
@@ -100,6 +104,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_TernaryOperator;
   private ConceptPresentation props_TrueValue;
   private ConceptPresentation props_Tuple;
+  private ConceptPresentation props_TupleNameVal;
+  private ConceptPresentation props_TupleValTypes;
   private ConceptPresentation props_TupleValue;
   private ConceptPresentation props_Typable;
   private ConceptPresentation props_Type;
@@ -357,6 +363,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FloatValue = cpb.create();
         }
         return props_FloatValue;
+      case LanguageConceptSwitch.FuncDefinition:
+        if (props_FuncDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("func");
+          props_FuncDefinition = cpb.create();
+        }
+        return props_FuncDefinition;
+      case LanguageConceptSwitch.FuncParam:
+        if (props_FuncParam == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FuncParam");
+          props_FuncParam = cpb.create();
+        }
+        return props_FuncParam;
+      case LanguageConceptSwitch.Function:
+        if (props_Function == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Function");
+          props_Function = cpb.create();
+        }
+        return props_Function;
       case LanguageConceptSwitch.GreaterThanOp:
         if (props_GreaterThanOp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -635,6 +662,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RemainderOp = cpb.create();
         }
         return props_RemainderOp;
+      case LanguageConceptSwitch.Return:
+        if (props_Return == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("return");
+          props_Return = cpb.create();
+        }
+        return props_Return;
       case LanguageConceptSwitch.RightBitShiftAssignOp:
         if (props_RightBitShiftAssignOp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -744,6 +778,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Tuple = cpb.create();
         }
         return props_Tuple;
+      case LanguageConceptSwitch.TupleNameVal:
+        if (props_TupleNameVal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TupleNameVal = cpb.create();
+        }
+        return props_TupleNameVal;
+      case LanguageConceptSwitch.TupleValTypes:
+        if (props_TupleValTypes == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TupleValTypes");
+          props_TupleValTypes = cpb.create();
+        }
+        return props_TupleValTypes;
       case LanguageConceptSwitch.TupleValue:
         if (props_TupleValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

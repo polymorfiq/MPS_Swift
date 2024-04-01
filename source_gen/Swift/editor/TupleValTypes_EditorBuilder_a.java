@@ -26,13 +26,13 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
-/*package*/ class Tuple_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class TupleValTypes_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Tuple_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public TupleValTypes_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -49,7 +49,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_3einsy_a");
+    editorCell.setCellId("Collection_gg84ue_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -59,7 +59,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "(");
-    editorCell.setCellId("Constant_3einsy_a0");
+    editorCell.setCellId("Constant_gg84ue_a0");
     Style style = new StyleImpl();
     new typeStyleClass(this).apply(style, editorCell);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -68,20 +68,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new elementsListHandler_3einsy_b0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new valTypesListHandler_gg84ue_b0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
-    editorCell.setCellId("refNodeList_elements");
-    Style style = new StyleImpl();
-    new typeStyleClass(this).apply(style, editorCell);
-    editorCell.getStyle().putAll(style);
+    editorCell.setCellId("refNodeList_valTypes");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class elementsListHandler_3einsy_b0 extends RefNodeListHandler {
+  private static class valTypesListHandler_gg84ue_b0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public elementsListHandler_3einsy_b0(SNode ownerNode, EditorContext context) {
+    public valTypesListHandler_gg84ue_b0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -91,10 +88,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.elements$1GrB;
+      return LINKS.valTypes$Cvqc;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.TupleNameVal$wt;
+      return CONCEPTS.Typable$9k;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -104,7 +101,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(elementsListHandler_3einsy_b0.this.getNode(), LINKS.elements$1GrB));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(valTypesListHandler_gg84ue_b0.this.getNode(), LINKS.valTypes$Cvqc));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -151,7 +148,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       Style style = new StyleImpl();
       style.set(StyleAttributes.LAYOUT_CONSTRAINT, "");
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       editorCell.getStyle().putAll(style);
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
@@ -160,7 +156,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
-    editorCell.setCellId("Constant_3einsy_c0");
+    editorCell.setCellId("Constant_gg84ue_c0");
     Style style = new StyleImpl();
     new typeStyleClass(this).apply(style, editorCell);
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -170,10 +166,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink elements$1GrB = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b42c47863L, 0x26f658b42c47875L, "elements");
+    /*package*/ static final SContainmentLink valTypes$Cvqc = MetaAdapterFactory.getContainmentLink(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f99b8a36L, 0x28a3a9c7f99b8a37L, "valTypes");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TupleNameVal$wt = MetaAdapterFactory.getConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x28a3a9c7f99b8116L, "Swift.structure.TupleNameVal");
+    /*package*/ static final SInterfaceConcept Typable$9k = MetaAdapterFactory.getInterfaceConcept(0xfe2099137e444724L, 0xa9e768530fec997cL, 0x26f658b4258f859L, "Swift.structure.Typable");
   }
 }
